@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Food Ordering</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🍔 Campus Food Hub</h1>
+        <p>Order your favourite food!</p>
+    </header>
+
+    <h2>Our Food Menu</h2>
+
+    <div class="menu">
+
+        <div class="food">
+            <h3>🍕 Pizza</h3>
+            <p>₹120</p>
+            <button onclick="addToCart('Pizza',120)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food">
+            <h3>🍔 Burger</h3>
+            <p>₹80</p>
+            <button onclick="addToCart('Burger',80)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food">
+            <h3>🥪 Sandwich</h3>
+            <p>₹50</p>
+            <button onclick="addToCart('Sandwich',50)">
+                Add to Cart
+            </button>
+        </div>
+
+        <div class="food">
+            <h3>🍟 French Fries</h3>
+            <p>₹60</p>
+            <button onclick="addToCart('French Fries',60)">
+                Add to Cart
+            </button>
+        </div>
+
+    </div>
+
+    <h2>🛒 Your Cart</h2>
+
+    <div id="cart">
+        Your cart is empty.
+    </div>
+
+    <h3 id="total">Total: ₹0</h3>
+
+    <button onclick="placeOrder()" class="order-btn">
+        Place Order
+    </button>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
